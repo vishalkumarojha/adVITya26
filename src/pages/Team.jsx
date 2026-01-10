@@ -41,55 +41,63 @@ function Team() {
     },
   ];
   return (
-    <div className="min-h-screen text-[#816e8b] team-main-div gap-4 box-border flex flex-col w-screen bg-[#110019]">
-      <h1 className="font-sans text-3xl font-extrabold">OUR TEAM</h1>
-      <p>
-        Dive into the heart of VIT Bhopal with AdVITYa'25 – an electrifying
-        blend of technology and culture. Crafted by the ingenious minds of VIT
-        Bhopal students,
-      </p>
-      <div className="flex flex-col mt-6">
-        <span className="font-sans font-extrabold text-xl mb-3" >Our Patron</span>
-        <div className="flex flex-row items-center flex-wrap gap-7" >
-          {Data.map((element) => {
-            return (
-              <TeamCard
-                name={element.name}
-                designation={element.designation}
-                imgurl={element.imgurl}
-              />
-            );
-          })}
+    <div className="min-h-screen text-[#816e8b] px-4 sm:px-6 md:px-8 lg:px-20 box-border flex flex-col w-full bg-[#110019]  py-28 team-main-div">
+      <div className="py-24 flex flex-col items-center" >
+        <h1 className="font-sans text-2xl text-center sm:text-3xl md:text-4xl font-extrabold mb-3 sm:mb-4">
+          OUR TEAM
+        </h1>
+        <p className="text-xs sm:text-sm md:text-base text-center mb-6 sm:mb-8 max-w-3xl">
+          Dive into the heart of VIT Bhopal with AdVITYa'25 – an electrifying
+          blend of technology and culture. Crafted by the ingenious minds of VIT
+          Bhopal students.
+        </p>
+      </div>
+
+      <div className="flex flex-col lg:mb-20 mb-15">
+        <span className="font-sans font-extrabold text-lg sm:text-xl md:text-2xl mb-4 sm:mb-6 text-center sm:text-left">
+          Our Patron
+        </span>
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-4 sm:gap-6 justify-items-center">
+          {Data.map((element, index) => (
+            <TeamCard
+              key={`patron-${index}`}
+              name={element.name}
+              designation={element.designation}
+              imgurl={element.imgurl}
+            />
+          ))}
         </div>
       </div>
-      {/* Section 2 */}
-      <div className="flex flex-col mt-6">
-        <span className="font-sans font-extrabold text-xl mb-3" >Conveyors</span>
-        <div className="flex flex-row items-center flex-wrap gap-7" >
-          {Data.map((element) => {
-            return (
-              <TeamCard
-                name={element.name}
-                designation={element.designation}
-                imgurl={element.imgurl}
-              />
-            );
-          })}
+
+      <div className="flex flex-col mb-8 sm:mb-10">
+        <span className="font-sans font-extrabold text-lg sm:text-xl md:text-2xl mb-4 sm:mb-6 text-center sm:text-left">
+          Conveyors
+        </span>
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-4 sm:gap-6 justify-items-center">
+          {Data.map((element, index) => (
+            <TeamCard
+              key={`conveyors-${index}`}
+              name={element.name}
+              designation={element.designation}
+              imgurl={element.imgurl}
+            />
+          ))}
         </div>
       </div>
-      {/* Section 3 */}
-      <div className="flex flex-col mt-6">
-        <span className="font-sans font-extrabold text-xl mb-3" >Student Council</span>
-        <div className="flex flex-row items-center flex-wrap gap-7" >
-          {Data.map((element) => {
-            return (
-              <TeamCard
-                name={element.name}
-                designation={element.designation}
-                imgurl={element.imgurl}
-              />
-            );
-          })}
+
+      <div className="flex flex-col">
+        <span className="font-sans font-extrabold text-lg sm:text-xl md:text-2xl mb-4 sm:mb-6 text-center sm:text-left">
+          Student Council
+        </span>
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-4 sm:gap-6 justify-items-center">
+          {Data.map((element, index) => (
+            <TeamCard
+              key={`council-${index}`}
+              name={element.name}
+              designation={element.designation}
+              imgurl={element.imgurl}
+            />
+          ))}
         </div>
       </div>
     </div>
