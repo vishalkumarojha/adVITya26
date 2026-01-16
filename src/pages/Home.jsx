@@ -8,14 +8,29 @@ import LeadershipSection from "../components/Home/LeadershipSection";
 
 function Home() {
   return (
-    <div className="min-h-screen w-full bg-white">
-      <HeroSection />
-      <AboutSection />
-      <GallerySection />
-      <SponsoredBy />
-      <TeaserSection />
-      <EventsSection />
-      <LeadershipSection />
+    <div className="min-h-screen w-full overflow-x-hidden bg-white">
+      <section id="hero">
+        <HeroSection />
+      </section>
+      <section id="about">
+        <AboutSection />
+      </section>
+      <section id="gallery">
+        <GallerySection />
+      </section>
+      <section id="sponsors">
+        <SponsoredBy />
+      </section>
+      <section id="teaser">
+        <TeaserSection />
+      </section>
+      <section id="events">
+        <EventsSection />
+      </section>
+      <section id="leadership">
+        <LeadershipSection />
+      </section>
+      
     </div>
   );
 }
