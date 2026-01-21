@@ -10,76 +10,96 @@ const EventsSection = () => {
     const [isInEventsSection, setIsInEventsSection] = useState(false);
 
     const events = [
-        {
-            image: "https://fra.cloud.appwrite.io/v1/storage/buckets/696f8e35003b8cc96b50/files/696f8eb7002efdc16a5d/view?project=695eb843003ae5a0552b&mode=admin?w=800",
-            title: "Bike Stunt Show",
-            club: "Student Welfare office",
-            date: "T.B.A.",
-            venue: "T.B.A.",
-        },
-        {
-            image: "https://fra.cloud.appwrite.io/v1/storage/buckets/696f8e35003b8cc96b50/files/696f9069000c4f7a027e/view?project=695eb843003ae5a0552b&mode=admin?w=800",
-            title: "Live Caricatures",
-            club: "Student Welfare office",
-            date: "T.B.A.",
-            venue: "T.B.A.",
-        },
-        {
-            image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-            title: "Sunset Jam",
-            club: "Live Wire",
-            date: "22 Feb 2026",
-            venue: "Central Lawn",
-        },
-        {
-            image: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800",
-            title: "Bass Drop",
-            club: "DJ Society",
-            date: "1 Mar 2026",
-            venue: "Indoor Arena",
-        },
-        {
-            image: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800",
-            title: "Unplugged",
-            club: "Acoustics Club",
-            date: "5 Mar 2026",
-            venue: "Seminar Hall",
-        },
-        {
-            image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800",
-            title: "Night Beats",
-            club: "Musicians Club",
-            date: "12 Feb 2026",
-            venue: "Open Air Theatre",
-        },
-        {
-            image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800",
-            title: "Echoes",
-            club: "Rhythm Society",
-            date: "18 Feb 2026",
-            venue: "Main Auditorium",
-        },
-        {
-            image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-            title: "Sunset Jam",
-            club: "Live Wire",
-            date: "22 Feb 2026",
-            venue: "Central Lawn",
-        },
-        {
-            image: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800",
-            title: "Bass Drop",
-            club: "DJ Society",
-            date: "1 Mar 2026",
-            venue: "Indoor Arena",
-        },
-        {
-            image: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800",
-            title: "Unplugged",
-            club: "Acoustics Club",
-            date: "5 Mar 2026",
-            venue: "Seminar Hall",
-        },
+          {
+    id: 1,
+    title: 'Bike Stunt Show',
+    club: 'Student Welfare Office',
+    date: 'T.B.A.',
+    venue: 'T.B.A.',
+    image:
+      'https://fra.cloud.appwrite.io/v1/storage/buckets/696f8e35003b8cc96b50/files/696f8eb7002efdc16a5d/view?project=695eb843003ae5a0552b&mode=admin?w=1200',
+  },
+  {
+    id: 2,
+    title: 'Live Caricature',
+    club: 'Student Welfare Office',
+    date: 'T.B.A.',
+    venue: 'T.B.A.',
+    image:
+      'https://fra.cloud.appwrite.io/v1/storage/buckets/696f8e35003b8cc96b50/files/69712d86002cbcaf0f91/view?project=695eb843003ae5a0552b&mode=admin?w=1200',
+  },
+  {
+    id: 3,
+    title: 'Mechanical Bull Ride',
+    club: 'Student Welfare Office',
+    date: 'T.B.A.',
+    venue: 'T.B.A.',
+    image:
+      'https://fra.cloud.appwrite.io/v1/storage/buckets/696f8e35003b8cc96b50/files/69712e48003b4b7a2f3e/view?project=695eb843003ae5a0552b&mode=admin?w=1200',
+  },
+  {
+    id: 4,
+    title: 'Soapy Football',
+    club: 'Student Welfare Office',
+    date: 'T.B.A.',
+    venue: 'T.B.A.',
+    image:
+      'https://fra.cloud.appwrite.io/v1/storage/buckets/696f8e35003b8cc96b50/files/69712faf0012dd594289/view?project=695eb843003ae5a0552b&mode=admin?w=1200',
+  },
+  {
+    id: 5,
+    title: 'Photo Booth',
+    club: 'Student Welfare Office',
+    date: 'T.B.A.',
+    venue: 'T.B.A.',
+    image:
+      'https://fra.cloud.appwrite.io/v1/storage/buckets/696f8e35003b8cc96b50/files/697131a3002c13530de1/view?project=695eb843003ae5a0552b&mode=admin?w=1200',
+  },
+                  {
+    id: 1,
+    title: 'Bike Stunt Show',
+    club: 'Student Welfare Office',
+    date: 'T.B.A.',
+    venue: 'T.B.A.',
+    image:
+      'https://fra.cloud.appwrite.io/v1/storage/buckets/696f8e35003b8cc96b50/files/696f8eb7002efdc16a5d/view?project=695eb843003ae5a0552b&mode=admin?w=1200',
+  },
+  {
+    id: 2,
+    title: 'Live Caricature',
+    club: 'Student Welfare Office',
+    date: 'T.B.A.',
+    venue: 'T.B.A.',
+    image:
+      'https://fra.cloud.appwrite.io/v1/storage/buckets/696f8e35003b8cc96b50/files/69712d86002cbcaf0f91/view?project=695eb843003ae5a0552b&mode=admin?w=1200',
+  },
+  {
+    id: 3,
+    title: 'Mechanical Bull Ride',
+    club: 'Student Welfare Office',
+    date: 'T.B.A.',
+    venue: 'T.B.A.',
+    image:
+      'https://fra.cloud.appwrite.io/v1/storage/buckets/696f8e35003b8cc96b50/files/69712e48003b4b7a2f3e/view?project=695eb843003ae5a0552b&mode=admin?w=1200',
+  },
+  {
+    id: 4,
+    title: 'Soapy Football',
+    club: 'Student Welfare Office',
+    date: 'T.B.A.',
+    venue: 'T.B.A.',
+    image:
+      'https://fra.cloud.appwrite.io/v1/storage/buckets/696f8e35003b8cc96b50/files/69712faf0012dd594289/view?project=695eb843003ae5a0552b&mode=admin?w=1200',
+  },
+  {
+    id: 5,
+    title: 'Photo Booth',
+    club: 'Student Welfare Office',
+    date: 'T.B.A.',
+    venue: 'T.B.A.',
+    image:
+      'https://fra.cloud.appwrite.io/v1/storage/buckets/696f8e35003b8cc96b50/files/697131a3002c13530de1/view?project=695eb843003ae5a0552b&mode=admin?w=1200',
+  },
     ];
 
     useEffect(() => {
